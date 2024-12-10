@@ -8,7 +8,7 @@ import imageTest from '@/assets/download.jpeg'
 
 <template>
 
-  <div class="grid px-2 gap-2 w-full">
+  <div class="grid px-1 gap-y-4 w-full">
     <HotelCard :hotelId="23" title="Cove Hotel" :image="imageTest" :price="200" location="cotonou">
       <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path

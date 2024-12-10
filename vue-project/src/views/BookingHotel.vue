@@ -12,8 +12,6 @@ import FooterNavbar from '@/components/Navbars/FooterNavbar.vue';
     <AppHeader title="Hotel Booking" :add-right-button=false description="Choose Your Favorite hotel and enjoy the service"/>
     <div class="flex flex-col gap-8  mx-4 mt-5">
       <BookingForm />
-
-
     </div>
     <div class="sticky bottom-0 w-full">
       <FooterNavbar />

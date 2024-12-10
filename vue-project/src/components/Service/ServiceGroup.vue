@@ -6,7 +6,7 @@ import CardService from './CardService.vue';
 <template>
 
   <div class="grid grid-cols-3  justify-between items-center mt-5 gap-3 ">
-    <CardService link="/booking" color="bg-orange-200" title="Hotel">
+    <CardService link="/bookings" color="bg-orange-200" title="Hotel">
       <svg width="30px" height="30px" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg">
         <path class="cls-1"
@@ -28,7 +28,7 @@ import CardService from './CardService.vue';
         <line class="cls-1" x1="17.73" y1="9.14" x2="17.73" y2="5.32" />
       </svg>
     </CardService>
-    <CardService link="/booking" color="bg-blue-400" title="Transport">
+    <CardService link="/bookings" color="bg-blue-400" title="Transport">
 
       <svg width="30px" height="30px" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg">
@@ -53,7 +53,7 @@ import CardService from './CardService.vue';
 
 
     </CardService>
-    <CardService link="/booking" color="bg-primary" title="Appartment">
+    <CardService link="/bookings" color="bg-primary" title="Appartment">
       <svg width="30px" height="30px" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg">
         <path class="cls-1"

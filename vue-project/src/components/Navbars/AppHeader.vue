@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import GoBack from '../Goback/GoBack.vue';
+
 interface Props {
   addRightButton: boolean;
   description?: string;
@@ -13,13 +15,14 @@ defineProps<Props>();
 
   <div class="relative w-full bg-primary h-44 rounded-bl-3xl">
     <div class="flex justify-center items-center justify-between h-full px-2">
-      <span class="rounded-full p-2 bg-white">
+      <!-- <span class="rounded-full p-2 bg-white">
         <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M5 12H19M5 12L11 6M5 12L11 18" stroke="#000000" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" />
         </svg>
 
-      </span>
+      </span> -->
+      <GoBack />
 
       <div class="flex flex-col gap-10 justify-center items-center text-center " >
         <h2 class="text-3xl text-white font-semibold">{{ title }}</h2>

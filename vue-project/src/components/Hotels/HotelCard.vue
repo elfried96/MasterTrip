@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import NavigationButton from '../Buttons/NavigationButton.vue';
-import imageTest from '@/assets/download.jpeg'
+import { useRouter } from 'vue-router';
+
+// Get the router instance
+const router = useRouter();
 
 interface Props {
   title: string;
@@ -14,38 +17,35 @@ defineProps<Props>();
 
 const handleClick = () => {
   console.log("view hotel")
+  router.push("/details/2")
 }
 
 </script>
-
-
 <template>
 
-  <RouterLink to="" class="relative bg-white flex flex-col gap-2 p-4 h-68 w-full rounded-xl">
-    <div class="h-28">
-      <div :style="`background-image: url('${imageTest}');`" class="bg-cover bg-center">
-
-      </div>
+  <RouterLink to="/details/2" class="relative bg-white flex flex-col gap-2  h-68 w-full rounded-xl">
+    <div class="h-28 rounded-tl-xl">
+      <img :src="image" alt="" class="bg-cover h-full bg-center  rounded-tl-xl rounded-br-lg w-11/12">
     </div>
-
-    <div class="flex flex-col gap-2">
-      <h1 class="font-medium text-xl">{{ title }}</h1>
-      <div class="flex">
-        <span>
-          <slot></slot>
-        </span>
-        <p>{{ location}}</p>
+    <div class="flex flex-col px-4 py-3">
+      <div class="flex flex-col gap-y-2 ">
+        <h1 class="font-medium text-xl">{{ title }}</h1>
+        <div class="flex gap-x-2 items-center">
+          <span>
+            <slot></slot>
+          </span>
+          <p>{{ location }}</p>
+        </div>
       </div>
-    </div>
-    <div class="flex justify-between items-center">
+      <div class="flex justify-between items-center">
 
-      <p>{{ price }} FCFA</p>
-      <div>
-        <NavigationButton title="Book a room" :handle-click="handleClick" />
+        <p>{{ price }} FCFA</p>
+        <div>
+          <NavigationButton title="Book a room" :handle-click="handleClick" />
+
+        </div>
 
       </div>
-
-
     </div>
 
   </RouterLink>

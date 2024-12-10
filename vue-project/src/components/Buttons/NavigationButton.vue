@@ -13,8 +13,8 @@ defineProps<Props>();
 
 <template>
 
-  <button  :class="`rounded-full text-center font-medium text-xl px-4 py-4 w-full  bg-${color || 'primary'} `"    @click="handleClick">
-    <p class="text-white">{{title}}</p>
+  <button  :class="`rounded-full text-center font-medium text-xl px-4 py-2 w-full  bg-${color || 'primary'} `"    @click="handleClick">
+    <p :class="`text-${cssText || 'white'} font-semibold text-lg` ">{{title}}</p>
 
   </button>
 
