@@ -9,6 +9,8 @@ import RoomsView from '@/views/Rooms/RoomsView.vue'
 import OnBoarding from '@/views/OnBoarding/OnBoarding.vue'
 import OnBoardingTwo from '@/views/OnBoarding/OnBoardingTwo.vue'
 import OnBoardingThree from '@/views/OnBoarding/OnBoardingThree.vue'
+import ConfirmPayment from '@/views/Payements/ConfirmPayment.vue'
+import PaymentView from '@/views/Payements/PaymentView.vue'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -64,6 +66,19 @@ const router = createRouter({
       name: 'onb3',
       component: OnBoardingThree,
     },
+    {
+      path: '/confirmpayment',
+      name: 'confirmpayment',
+      component: ConfirmPayment,
+    },
+    {
+      path: '/payment',
+      name: '',
+      component: PaymentView,
+    },
+
+
+
   ],
 })
 
