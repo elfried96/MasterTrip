@@ -1,0 +1,8 @@
+{
+  "buildType": 1,
+  "buildCmd": "npm run build",
+  "buildDist": "c:\\Users\\ekfri\\MasterTrip\\vue-project\\",
+  "entryPagePath": "index.html",
+  "appID": 1733852164596,
+  "isCompile": false
+}
