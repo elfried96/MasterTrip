@@ -1,0 +1,8 @@
+{
+  "buildType": 1,
+  "buildCmd": "npm run build",
+  "buildDist": "e:\\Steve_Work\\vueproject\\newFolder\\vue-project\\dist",
+  "entryPagePath": "index.html",
+  "appID": 1733843755729,
+  "isCompile": false
+}
