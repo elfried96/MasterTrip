@@ -1,9 +1,9 @@
 {
-    "description": "Project Config File",
-    "compileType": "miniprogram",
-    "appid": "1733843755729",
-    "projectname": "vue-project",
-    "setting":{
-        "es5":true
-    }
+  "description": "Project Config File",
+  "compileType": "miniprogram",
+  "appid": "1733861957441",
+  "projectname": "vueproject",
+  "setting": {
+    "es5": true
+  }
 }

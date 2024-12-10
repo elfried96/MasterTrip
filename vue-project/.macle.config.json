@@ -1,8 +1,1 @@
-{
-  "buildType": 1,
-  "buildCmd": "npm run build",
-  "buildDist": "e:\\Steve_Work\\vueproject\\newFolder\\vue-project\\dist",
-  "entryPagePath": "index.html",
-  "appID": 1733843755729,
-  "isCompile": false
-}
+{"buildType":1,"buildCmd":"npm run build","buildDist":"c:\\Users\\ekfri\\MasterTrip\\vue-project\\dist","entryPagePath":"index.html","appID":1733861957441,"isCompile":false}

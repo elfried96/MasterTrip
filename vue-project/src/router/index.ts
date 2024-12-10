@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import SplashScreen from '@/views/SplashScreen.vue'
 import BookingHotel from '@/views/BookingHotel.vue'
@@ -11,7 +11,7 @@ import OnBoardingTwo from '@/views/OnBoarding/OnBoardingTwo.vue'
 import OnBoardingThree from '@/views/OnBoarding/OnBoardingThree.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/home',
@@ -64,9 +64,6 @@ const router = createRouter({
       name: 'onb3',
       component: OnBoardingThree,
     },
-
-
-
   ],
 })
 
